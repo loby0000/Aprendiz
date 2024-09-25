@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="tabla de admin.css">
+    <script src="tabla de admin.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Aprendices</h1>
+
+        <div id="deleteResult"></div>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Numero documento</th>
+                    <th>Número de Ficha</th>
+                    <th>Accion</th>
+                    
+                
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Aquí se llenarán los datos dinámicamente -->
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <a href="index.html">
+                <button id="logoutButton">Cerrar Sesión</button>
+            </a>
+            <button id="deleteAllButton">Borrar Aprendices</button>
+        </div>
+    </div> 
+</body>
+</html>

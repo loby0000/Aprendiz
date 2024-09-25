@@ -1,0 +1,97 @@
+body {
+    background-color: #121212; /* Fondo negro para toda la pantalla */
+    color: #e0e0e0; /* Texto claro para contraste en el fondo negro */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilo general para el contenedor */
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #2c2c2c; /* Fondo oscuro para el contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    text-align: center;
+    color: #e0e0e0; /* Texto claro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para las etiquetas de los campos de entrada */
+label {
+    margin-bottom: 5px;
+    color: #b0b0b0; /* Texto de las etiquetas en gris claro */
+}
+
+/* Estilo para los campos de entrada */
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333; /* Fondo oscuro para los campos de entrada */
+    color: #e0e0e0; /* Texto claro en los campos de entrada */
+}
+
+/* Estilo para el botón de inicio de sesión */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff; /* Color para el botón de inicio de sesión */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para los mensajes de error */
+.login-message {
+    color: #ff6f6f; /* Color para los mensajes de error */
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones en el contenedor de botones */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para los botones dentro del contenedor de botones */
+.buttons button {
+    margin: 5px 0;
+    background-color: #28a745; /* Color para el botón de "Volver a Inicio de Sesión" */
+}
+
+/* Estilo específico para el botón de administración */
+#adminLoginButton {
+    background-color: #007bff; /* Color para el botón de administración */
+}
+
+#adminLoginButton:hover {
+    background-color: #0056b3; /* Efecto hover para el botón de administración */
+}

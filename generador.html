@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="generador.css">
+    <!-- Incluir qrious.js para generar el código QR -->
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Códigos QR</h1>
+
+        <form id="qr-form" autocomplete="off">
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" placeholder="Escribe tu nombre..." required autocomplete="off">
+
+            <label for="document-type">Tipo de documento:</label>
+            <select id="document-type" required autocomplete="off">
+                <option value="">Selecciona tipo de documento</option>
+                <option value="TI">TI</option>
+                <option value="CC">CC</option>
+            </select>
+
+            <label for="id">Número de documento:</label>
+            <input type="text" id="id" placeholder="Escribe tu número de documento..." required autocomplete="off">
+
+            <label for="blood-type">Tipo de sangre:</label>
+            <input type="text" id="blood-type" placeholder="Escribe tu tipo de sangre..." required autocomplete="off">
+
+            <label for="program">Ficha del programa:</label>
+            <input type="text" id="program" placeholder="Escribe la ficha del programa..." required autocomplete="off">
+
+            <label for="contents">Qué contiene en el bolso:</label>
+            <input type="text" id="contents" placeholder="Escribe lo que contiene en el bolso..." required autocomplete="off">
+
+            <button type="submit">Generar Código QR</button>
+        </form>
+
+        <canvas id="qr-code"></canvas>
+
+        <a href="iniciarSesion.html">
+            <button id="backButton">Volver a inicio de sesíon</button>
+        </a>
+    </div>
+
+    <script src="generador.js"></script>
+</body>
+</html>

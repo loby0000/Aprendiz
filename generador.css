@@ -1,0 +1,98 @@
+/* Generador de códigos QR - estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fondo oscuro para el cuerpo */
+    color: #e0e0e0; /* Color de texto claro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1f1f1f; /* Fondo oscuro para el contenedor */
+    border-radius: 8px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para profundidad */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+h1 {
+    color: #4caf50; /* Color verde brillante para el encabezado */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos del formulario horizontalmente */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Color de texto claro para las etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333; /* Borde oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #2a2a2a; /* Fondo oscuro para los campos de entrada */
+    color: #e0e0e0; /* Texto claro */
+    font-size: 16px;
+    width: 100%; /* Ancho completo para los campos de entrada */
+    max-width: 400px; /* Limitar el ancho máximo para campos grandes */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #4caf50; /* Color verde brillante para el borde al enfocar */
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4caf50; /* Color de fondo verde brillante */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Espacio en la parte superior del botón */
+}
+
+button:hover {
+    background-color: #388e3c; /* Color verde más oscuro al pasar el cursor */
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #333; /* Borde oscuro alrededor del canvas */
+    background-color: #1f1f1f; /* Fondo oscuro para el canvas */
+}
+
+/* Estilo para el botón de volver */
+#backButton {
+    background-color: #007bff; /* Color de fondo azul */
+    margin-top: 20px; /* Espacio en la parte superior del botón */
+    display: block; /* Asegura que el botón se muestre como bloque para centrarlo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backButton:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
