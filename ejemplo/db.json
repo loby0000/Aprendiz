@@ -1,6 +1,0 @@
-{
-    "users": [
-      { "id": 1, "name": "Carlos", "age": 30, "email": "carlos@mail.com" },
-      { "id": 2, "name": "Ana", "age": 25, "email": "ana@mail.com" }
-    ]
-  }
